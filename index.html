@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>The Static Web JavaScript Quiz</title>
+  </head>
+  
+  <body>
+    <fieldset>
+      <legend for="tree-height">*Enter the height of your tree*</legend>
+      <!-- The "pattern" RegEx sets any number as a valid input -->
+      <input type="text" id="tree-height" pattern="^[0-9]+$" placeholder="Enter a number" required>
+    </fieldset>
+
+    <fieldset>
+      <legend for="tree-char">*Enter a character to build your tree*</legend>
+      <!-- The "pattern" RegEx looks for any single character as a valid input -->
+      <input type="text" id="tree-char" pattern="^.$" placeholder="Enter a single character" required>
+    </fieldset>
+
+    <p id="grow-tree">Grow your tree</p>
+
+    <script type="text/javascript" src="quiz.js"></script>
+  </body>
+
+</html>

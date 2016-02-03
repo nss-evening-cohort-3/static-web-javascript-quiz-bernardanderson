@@ -9,17 +9,17 @@ input {
   font-size: 1.2rem;
 }
 
-/*Based on the "pattern" RegEx, gives visual cues for valid input*/
+/* Based on the "pattern" RegEx, gives a visual cue for valid input */
 input:valid {
   background-color: lightgreen;
 } 
 
-/*Based on the "pattern" RegEx, gives visual cues for invalid input*/
+/* Based on the "pattern" RegEx, gives a visual cue for invalid input */
 input:invalid {
   background-color: lightcoral;
 }
 
-/* Style the "button" */
+/* Styles the "button" */
 p {
   display: block;
   background-color: lightgray;
@@ -30,16 +30,20 @@ p {
   width: 100px;
 }
 
+/* Make the pointer change when over the "button" */
 p:hover {
   cursor: pointer;
 }
 
-/* Give the "button" a pseudo-3D pressed down look*/
+/* Give the "button" a pseudo-3D pressed down look */
 p:active {
   box-shadow: 1px 1px 0.5px black;
 }
 
-/* This just styles the placeholder text so you can see it */
+/* This styles the placeholder text so you can see it */
+/* Apparently "placeholder" isn't fully working yet so you have to */
+/* use these browser-specific webkits */
+
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: teal;
 }

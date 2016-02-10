@@ -1,0 +1,58 @@
+fieldset {
+  display: block;
+  width: 50%;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+input {
+  font-size: 1.2rem;
+}
+
+/* Based on the "pattern" RegEx, gives a visual cue for valid input */
+input:valid {
+  background-color: lightgreen;
+} 
+
+/* Based on the "pattern" RegEx, gives a visual cue for invalid input */
+input:invalid {
+  background-color: lightcoral;
+}
+
+/* Styles the "button" */
+p {
+  display: block;
+  background-color: lightgray;
+  padding: 20px;
+  border: 2px solid black;
+  box-shadow: 2px 2px 2.5px black;
+  margin-left: 17%;
+  width: 100px;
+}
+
+/* Make the pointer change when over the "button" */
+p:hover {
+  cursor: pointer;
+}
+
+/* Give the "button" a pseudo-3D pressed down look */
+p:active {
+  box-shadow: 1px 1px 0.5px black;
+}
+
+/* This styles the placeholder text so you can see it */
+/* Apparently "placeholder" isn't fully working yet so you have to */
+/* use these browser-specific webkits */
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: teal;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: teal;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: teal;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: teal;
+}
